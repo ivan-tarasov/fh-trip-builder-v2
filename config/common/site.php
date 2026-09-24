@@ -130,10 +130,10 @@ return [
     */
 
     'footer-git' => [
-        'Explore the docs' => 'https://github.com/ivan-tarasov/fh-trip-builder/blob/master/README.md',
-        'Report Bug'       => 'https://github.com/ivan-tarasov/fh-trip-builder/issues',
-        'Request Feature'  => 'https://github.com/ivan-tarasov/fh-trip-builder/issues',
-        'Pull requests'    => 'https://github.com/ivan-tarasov/fh-trip-builder/pulls'
+        'Explore the docs' => 'https://github.com/ivan-tarasov/fh-trip-builder-v2/blob/main/README.md',
+        'Report Bug'       => 'https://github.com/ivan-tarasov/fh-trip-builder-v2/issues',
+        'Request Feature'  => 'https://github.com/ivan-tarasov/fh-trip-builder-v2/issues',
+        'Pull requests'    => 'https://github.com/ivan-tarasov/fh-trip-builder-v2/pulls'
     ],
 
     /*

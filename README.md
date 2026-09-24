@@ -59,13 +59,13 @@ A comprehensive database containing information about airports, airlines, and co
 ### 1. Clone the Repository
 First, clone the repository using the following command:
 ```bash
-git clone https://github.com/ivan-tarasov/fh-trip-builder.git
+git clone https://github.com/ivan-tarasov/fh-trip-builder-v2.git
 ```
 
 ### 2. Install Dependencies
 Navigate to the project directory and install the required dependencies using Composer:
 ```bash
-cd fh-trip-builder
+cd fh-trip-builder-v2
 composer install
 ```
 
@@ -173,23 +173,23 @@ All rights reserved. See `LICENSE.txt` for more information.
 
 [badge-demo-img]: https://img.shields.io/website?label=demo:%20trip-builder.tarasov.ca&style=for-the-badge&url=https%3A%2F%2Ftrip-builder.tarasov.ca%2F
 [badge-demo-url]: https://trip-builder.tarasov.ca/
-[badge-github-last-commit-img]: https://img.shields.io/github/last-commit/ivan-tarasov/fh-trip-builder?style=for-the-badge&logo=github
-[badge-github-last-commit-url]: https://github.com/ivan-tarasov/fh-trip-builder/commits/master
-[badge-github-repo-size-img]: https://img.shields.io/github/repo-size/ivan-tarasov/fh-trip-builder?style=for-the-badge&logo=github
-[badge-github-repo-size-url]: https://github.com/ivan-tarasov/fh-trip-builder/archive/refs/heads/master.zip
-[badge-github-pr-open-img]: https://img.shields.io/github/issues-pr/ivan-tarasov/fh-trip-builder?style=for-the-badge&logo=github
-[badge-github-pr-open-url]: https://github.com/ivan-tarasov/fh-trip-builder/pulls
-[badge-github-pr-closed-img]: https://img.shields.io/github/issues-pr-closed/ivan-tarasov/fh-trip-builder?style=for-the-badge&color=fca510&label=
-[badge-github-pr-closed-url]: https://github.com/ivan-tarasov/fh-trip-builder/pulls?q=is%3Apr+is%3Aclosed
-[badge-github-issues-open-img]: https://img.shields.io/github/issues/ivan-tarasov/fh-trip-builder?style=for-the-badge&logo=github
-[badge-github-issues-open-url]: https://github.com/ivan-tarasov/fh-trip-builder/issues
-[badge-github-issues-closed-img]: https://img.shields.io/github/issues-closed/ivan-tarasov/fh-trip-builder?style=for-the-badge&color=fca510&label=
-[badge-github-issues-closed-url]: https://github.com/ivan-tarasov/fh-trip-builder/issues?q=is%3Aissue+is%3Aclosed
+[badge-github-last-commit-img]: https://img.shields.io/github/last-commit/ivan-tarasov/fh-trip-builder-v2?style=for-the-badge&logo=github
+[badge-github-last-commit-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/commits/main
+[badge-github-repo-size-img]: https://img.shields.io/github/repo-size/ivan-tarasov/fh-trip-builder-v2?style=for-the-badge&logo=github
+[badge-github-repo-size-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/archive/refs/heads/main.zip
+[badge-github-pr-open-img]: https://img.shields.io/github/issues-pr/ivan-tarasov/fh-trip-builder-v2?style=for-the-badge&logo=github
+[badge-github-pr-open-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/pulls
+[badge-github-pr-closed-img]: https://img.shields.io/github/issues-pr-closed/ivan-tarasov/fh-trip-builder-v2?style=for-the-badge&color=fca510&label=
+[badge-github-pr-closed-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/pulls?q=is%3Apr+is%3Aclosed
+[badge-github-issues-open-img]: https://img.shields.io/github/issues/ivan-tarasov/fh-trip-builder-v2?style=for-the-badge&logo=github
+[badge-github-issues-open-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/issues
+[badge-github-issues-closed-img]: https://img.shields.io/github/issues-closed/ivan-tarasov/fh-trip-builder-v2?style=for-the-badge&color=fca510&label=
+[badge-github-issues-closed-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/issues?q=is%3Aissue+is%3Aclosed
 
 [badge-linkedin-img]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [badge-linkedin-url]: https://www.linkedin.com/in/ivan-tarasov-ca/
 
-[readme-url]: https://github.com/ivan-tarasov/fh-trip-builder/blob/master/README.md
+[readme-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/blob/main/README.md
 [flighthub-url]: https://flighthubgroup.com/
 [php-logo]: https://img.shields.io/badge/php-%3E%208.0.3-blue?style=for-the-badge
 [php-url]: https://www.php.net/ChangeLog-8.php#PHP_8_0
@@ -202,7 +202,7 @@ All rights reserved. See `LICENSE.txt` for more information.
 [fontawesome-logo]: https://img.shields.io/badge/FontAwesome%206.1.1-228ae6?style=for-the-badge&logo=fontawesome&logoColor=white
 [fontawesome-url]: https://fontawesome.com
 [pulls-shield]: https://img.shields.io/bitbucket/pr-raw/karapuzoff/trip-builder?style=for-the-badge
-[pulls-url]: https://github.com/ivan-tarasov/fh-trip-builder/pulls
+[pulls-url]: https://github.com/ivan-tarasov/fh-trip-builder-v2/pulls
 
 
 [project-screenshot]: http://static-tripbuilder.tarasov.ca.s3-website.ca-central-1.amazonaws.com/images/git/form_v2.png

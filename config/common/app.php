@@ -46,10 +46,10 @@ return [
     'year' => 2023,
 
     'license' => [
-        'type' => 'MIT',
-        'url'  => 'https://github.com/ivan-tarasov/fh-trip-builder/blob/master/LICENSE.txt',
+        'type' => 'All rights reserved',
+        'url'  => 'https://github.com/ivan-tarasov/fh-trip-builder-v2/blob/main/LICENSE.txt',
     ],
 
-    'documentation' => 'https://github.com/ivan-tarasov/fh-trip-builder/blob/master/README.md',
+    'documentation' => 'https://github.com/ivan-tarasov/fh-trip-builder-v2/blob/main/README.md',
 
 ];
