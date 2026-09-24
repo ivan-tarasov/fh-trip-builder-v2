@@ -130,7 +130,7 @@ class SearchController extends AbstractController
                 ->set()
                 ->setPlaceholder('search_page_url',          '/search/')
                 ->setPlaceholder('airports_autofill',        Config::get('api.fake.url') . '/airports/autofill/?query=')
-                ->setPlaceholder('search_triptype',          $this->get[self::GET_TRIPTYPE])
+                ->setPlaceholder('search_triptype',          self::escape($this->get[self::GET_TRIPTYPE]))
                 ->setPlaceholder('input_triptype',           Config::get('search.form.input.triptype'))
                 ->setPlaceholder('input_triptype_roundtrip', Config::get('search.triptype.roundtrip'))
                 ->setPlaceholder('input_triptype_oneway',    Config::get('search.triptype.oneway'))
@@ -138,12 +138,12 @@ class SearchController extends AbstractController
                 ->setPlaceholder('input_to',                 Config::get('search.form.input.arrive_place'))
                 ->setPlaceholder('input_from_date',          Config::get('search.form.input.depart_date'))
                 ->setPlaceholder('input_to_date',            Config::get('search.form.input.return_date'))
-                ->setPlaceholder('depart_code',              $this->get[self::GET_FROM])
-                ->setPlaceholder('arrive_code',              $this->get[self::GET_TO])
-                ->setPlaceholder('depart_city',              $this->data->depart)
-                ->setPlaceholder('arrive_city',              $this->data->arrive)
-                ->setPlaceholder('depart_date',              $this->get[self::GET_DEPART])
-                ->setPlaceholder('return_date',              $this->get[self::GET_RETURN])
+                ->setPlaceholder('depart_code',              self::escape($this->get[self::GET_FROM]))
+                ->setPlaceholder('arrive_code',              self::escape($this->get[self::GET_TO]))
+                ->setPlaceholder('depart_city',              self::escape($this->data->depart))
+                ->setPlaceholder('arrive_city',              self::escape($this->data->arrive))
+                ->setPlaceholder('depart_date',              self::escape($this->get[self::GET_DEPART]))
+                ->setPlaceholder('return_date',              self::escape($this->get[self::GET_RETURN]))
                 ->setPlaceholder('tab_rt_button',            $activetab[Config::get('search.triptype.roundtrip')]['btn']  ?? '')
                 ->setPlaceholder('tab_rt_aria',              $activetab[Config::get('search.triptype.roundtrip')]['aria'] ?? '')
                 ->setPlaceholder('tab_rt_div',               $activetab[Config::get('search.triptype.roundtrip')]['div']  ?? '')
@@ -270,8 +270,8 @@ class SearchController extends AbstractController
                     ->setPath('search/cards')
                     ->setFilename('view')
                     ->set()
-                    ->setPlaceholder('depart_city', $this->data->depart)
-                    ->setPlaceholder('arrive_city', $this->data->arrive)
+                    ->setPlaceholder('depart_city', self::escape($this->data->depart))
+                    ->setPlaceholder('arrive_city', self::escape($this->data->arrive))
                     ->setPlaceholder('total_flights', Helper::plural($total_flights, 'flight', true))
                     ->setPlaceholder('flight_cards', $flight_cards)
                     ->setPlaceholder('pagination_bar', $pagination_bar)
@@ -287,7 +287,7 @@ class SearchController extends AbstractController
                         Config::get('site.static.endpoint.images'),
                         'no-results.png'
                     )))
-                    ->setPlaceholder('return_date', !empty($this->get[self::GET_RETURN]) ? ' to ' . $this->get[self::GET_RETURN] : null)
+                    ->setPlaceholder('return_date', !empty($this->get[self::GET_RETURN]) ? ' to ' . self::escape($this->get[self::GET_RETURN]) : null)
                     ->save()
                     ->render();
             }
@@ -674,4 +674,12 @@ class SearchController extends AbstractController
         $this->data = $data;
     }
 
+    /**
+     * Templater inserts placeholder values as they are, so anything from the
+     * request, or echoed back by the API, is escaped before it goes in.
+     */
+    private static function escape(mixed $value): string
+    {
+        return htmlspecialchars(is_scalar($value) ? (string) $value : '', ENT_QUOTES, 'UTF-8');
+    }
 }

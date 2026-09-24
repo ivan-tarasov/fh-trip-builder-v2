@@ -8,6 +8,16 @@
 
 # Trip Builder
 
+> [!WARNING]
+> **This is a snapshot of release `v2.1.24` from September 2023, kept for reading. It is not maintained, and it should not be deployed.**
+>
+> The code is as it was then, apart from the licence and one security fix (search values are now escaped before they reach the page). Two known problems remain:
+>
+> - The whole repository is the web root, so a server set up this way would serve `.env` and the source files.
+> - Several dependencies in `composer.lock` have published security advisories.
+>
+> The [live demo](https://trip-builder.tarasov.ca/) runs a much later version.
+
 The Air Trips Builder is an application designed to help users search for one-way and round-trip flights easily. The application comes with built-in databases for airports, airlines, and countries, providing a comprehensive flight booking experience. Users can also order flights and manage their bookings through a personal page.
 
 ## About The Project
